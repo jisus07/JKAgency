@@ -2020,7 +2020,7 @@ progress {
 .form-control[type=file]:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
-.:focus {
+.focus {
   color: #212529;
   background-color: #fff;
   border-color: #8f98f9;
@@ -2847,19 +2847,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #1e30f3;
-  --bs-btn-border-color: #1e30f3;
+  --bs-btn-bg: var(--bs-black);
+  --bs-btn-border-color: var(--bs-black);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #1a29cf;
-  --bs-btn-hover-border-color: #1826c2;
+  --bs-btn-hover-bg: var(--bs-black);
+  --bs-btn-hover-border-color: var(--bs-black);
   --bs-btn-focus-shadow-rgb: 64, 79, 245;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #1826c2;
-  --bs-btn-active-border-color: #1724b6;
+  --bs-btn-active-bg: var(--bs-black);
+  --bs-btn-active-border-color: var(--bs-black);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #1e30f3;
-  --bs-btn-disabled-border-color: #1e30f3;
+  --bs-btn-disabled-bg: var(--bs-black);
+  --bs-btn-disabled-border-color: var(--bs-black);
 }
 
 .btn-secondary {
@@ -4915,7 +4915,30 @@ textarea.form-control-lg {
     border-left-width: var(--bs-list-group-border-width);
   }
 }
+
+
+
+@media (max-width: 767px) { /* 아이폰 12 사이즈에 대한 미디어 쿼리 */
+  .portfolios {
+      display: flex; /* flexbox를 사용하여 이미지를 가로 정렬합니다 */
+      flex-wrap: wrap; /* 이미지가 한 줄에 넘칠 경우 다음 줄로 넘어갈 수 있도록 설정합니다 */
+      justify-content: center; /* 이미지를 가운데 정렬합니다 */
+  }
+  
+  .portfolios img {
+      width: calc(50% - 10px); /* 가로로 2개씩 정렬하기 위해 50%의 너비를 설정합니다 */
+      margin: 5px; /* 이미지 간에 간격을 주기 위한 마진 설정 */
+      object-fit: contain; /* 이미지의 비율을 유지하면서 채워지도록 설정합니다 */
+      object-position: center; /* 이미지를 가운데 정렬합니다 */
+  }
+}
+
 @media (min-width: 768px) {
+  .portfolio {
+  width: 200px;
+  height: 300px;
+}
+
   .list-group-horizontal-md {
     flex-direction: row;
   }
@@ -8187,7 +8210,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-black), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
@@ -11070,7 +11093,8 @@ textarea.form-control-lg {
     margin: 0.25rem !important;
   }
   .m-xxl-2 {
-    margin: 0.5rem !important;
+    margin: 
+    0.5rem !important;
   }
   .m-xxl-3 {
     margin: 1rem !important;
@@ -11635,6 +11659,8 @@ html {
 }
 
 @media (min-width: 576px) {
+
+
   .profile {
     height: 60vw;
     width: 60vw;
