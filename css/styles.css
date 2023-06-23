@@ -726,6 +726,14 @@ progress {
   display: none;
 }
 
+#desktop_why_jk {
+  display: block;
+}
+
+#mobile_why_jk {
+  display: none;
+}
+
 
 @media (max-width: 992px) {
   #mobile_nori_tatto {
@@ -769,6 +777,21 @@ progress {
     display: block;
   }
   
+  #desktop_why_jk {
+    display: none;
+  }
+  
+  #mobile_why_jk {
+    display: block;
+  }
+
+  #why_jk_title {
+    text-align: center !important;
+  }
+
+  #why_jk_content {
+    padding-left: 0.5rem !important;
+  }
 }
 
 @media (max-width: 1200px) {
