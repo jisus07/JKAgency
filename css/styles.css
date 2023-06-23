@@ -4991,7 +4991,6 @@ textarea.form-control-lg {
 }
 
 
-
 @media (max-width: 767px) { /* 아이폰 12 사이즈에 대한 미디어 쿼리 */
   .portfolios {
       display: flex; /* flexbox를 사용하여 이미지를 가로 정렬합니다 */
@@ -5498,11 +5497,35 @@ textarea.form-control-lg {
   .modal-xl {
     --bs-modal-width: 800px;
   }
+
+  .portfolios {
+    width: 1015px;
+    margin: 0 auto;
+  }
 }
+
+@media(min-width: 765px) {
+  .portfolios {
+    width: 610px;
+    margin: 0 auto;
+  }
+} 
+
+@media(min-width: 1020px) {
+  .portfolios {
+    width: 1012px;
+    margin: 0 auto;
+  }
+} 
+
+
+
+
 @media (min-width: 1200px) {
   .modal-xl {
     --bs-modal-width: 1140px;
   }
+
 }
 .modal-fullscreen {
   width: 100vw;
@@ -6934,6 +6957,15 @@ textarea.form-control-lg {
     z-index: 1020;
   }
 }
+
+
+@media (max-width: 841px) {
+  /* .portfolios {
+    width: 1010px;
+    margin: 0 auto;
+  } */
+}
+
 @media (min-width: 992px) {
   .sticky-lg-top {
     position: sticky;
