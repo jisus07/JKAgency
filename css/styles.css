@@ -662,6 +662,8 @@ progress {
   }
 }
 
+/* tatoo */
+
 #mobile_nori_tatto {
   display: none;
 }
@@ -669,6 +671,26 @@ progress {
 #desktop_nori_tatoo {
   display: block;
 }
+
+/* athletes */
+
+#desktop_athletes {
+  display: block;
+}
+
+#mobile_athletes {
+  display: none;
+}
+
+/* dance */
+#desktop_dance {
+  display: block;
+}
+
+#mobile_dance {
+  display: none;
+}
+
 
 @media (max-width: 992px) {
   #mobile_nori_tatto {
@@ -678,6 +700,23 @@ progress {
   #desktop_nori_tatto {
     display: none;
   }
+
+  #desktop_athletes {
+    display: none;
+  }
+  
+  #mobile_athletes {
+    display: block;
+  }
+
+  #desktop_dance {
+    display: none;
+  }
+  
+  #mobile_dance {
+    display: block;
+  }
+  
 }
 
 
