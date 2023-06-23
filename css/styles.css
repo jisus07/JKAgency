@@ -695,6 +695,37 @@ progress {
   display: none;
 }
 
+/* special */
+#desktop_special {
+  display: block;
+}
+
+#mobile_special {
+  display: none;
+}
+
+/* home_ jk is */
+#desktop_jk_is {
+  display: block;
+}
+
+#mobile_jk_is {
+  display: none;
+}
+
+#pad_jk_is {
+  display: none;
+}
+
+/* contact */
+#desktop_contact {
+  display: block;
+}
+
+#mobile_contact {
+  display: none;
+}
+
 
 @media (max-width: 992px) {
   #mobile_nori_tatto {
@@ -720,11 +751,56 @@ progress {
   #mobile_dance {
     display: block;
   }
+
+  /* special */
+  #desktop_special {
+    display: none;
+  }
+
+  #mobile_special {
+    display: block;
+  }
+
+  #desktop_contact {
+    display: none;
+  }
+  
+  #mobile_contact {
+    display: block;
+  }
   
 }
 
+@media (max-width: 1200px) {
+    /* home_ jk is */
+    #desktop_jk_is {
+      display: none;
+    }
+  
+    #mobile_jk_is {
+      display: none;
+    }
+    
+    #pad_jk_is {
+      display: block;
+    }
 
+}
 
+@media (max-width: 998px) {
+    /* home_ jk is */
+    #desktop_jk_is {
+      display: none;
+    }
+  
+    #mobile_jk_is {
+      display: block;
+    }
+    
+    #pad_jk_is {
+      display: none;
+    }
+}
 
 
 @media (min-width: 992px) {
