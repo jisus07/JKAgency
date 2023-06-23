@@ -231,6 +231,10 @@ xsmall, .xsmall {
   font-size: 0.8em;
 }
 
+xxsmall, .xxsmall {
+  font-size: 0.85em;
+}
+
 mark, .mark {
   padding: 0.1875em;
   background-color: var(--bs-highlight-bg);
