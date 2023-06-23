@@ -785,11 +785,11 @@ progress {
     display: block;
   }
 
-  #why_jk_title {
-    text-align: center !important;
+  #why_jk_content {
+    padding-left: 0.5rem !important;
   }
 
-  #why_jk_content {
+  #why_jk_title {
     padding-left: 0.5rem !important;
   }
 }
