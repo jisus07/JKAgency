@@ -3972,7 +3972,19 @@ fieldset:disabled .btn {
 .nav-link:focus {
   color: var(--bs-nav-link-hover-color);
 }
+
 .nav-link.disabled {
+  color: var(--bs-nav-link-disabled-color);
+  pointer-events: none;
+  cursor: default;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: #7b7a7a;
+}
+
+.footer-link.disabled {
   color: var(--bs-nav-link-disabled-color);
   pointer-events: none;
   cursor: default;
@@ -8929,6 +8941,10 @@ fieldset:disabled .btn {
 .bg-light {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.footer_bg {
+  background-color: #e5e5e5 !important;
 }
 
 .bg-dark {
